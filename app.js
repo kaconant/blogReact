@@ -8,12 +8,12 @@ let h = React.createElement;
 
 let container = h('div', null, [
     h('h1', null, 'My React Blog'), 
-    h('div', { className: 'card' },
+    h('div', { className: 'container' },
         blog.map(blog =>
-            h('div', { className : 'card-body' }, [
-                h('div', null, blog.title),
-                h('div', null, blog.author),
-                h('div', null, blog.info),
+            h('div', { className : 'card' }, [
+                h('div', { className : 'card-body' }, blog.title),
+                h('div', { className : 'card-body' }, blog.author),
+                h('div', { className : 'card-body' }, blog.info),
             ])
         )
     ),   
